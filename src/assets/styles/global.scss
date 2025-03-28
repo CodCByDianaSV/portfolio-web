@@ -1,0 +1,191 @@
+@use './variables' as vars;
+
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* Valor fijo */
+  background-color: #f9f9f9; /* Valor fijo */
+  color: #333333; /* Valor fijo */
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem;
+}
+
+/* Section Styles */
+.section {
+  width: 100%;
+  max-width: 1200px;
+  padding: 4rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.header-section {
+  text-align: center;
+  background: linear-gradient(90deg, #ff5722, #4caf50); /* Valores fijos */
+  color: white;
+  padding: 6rem 2rem;
+  border-radius: 0;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.projects-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.skills-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.contact-section {
+  text-align: center;
+  background-color: #f5f5f5; /* Valor fijo */
+  padding: 4rem 2rem;
+  border-radius: 8px;
+}
+
+/* Typography */
+h1, h2 {
+  margin: 0;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #4caf50; /* Valor fijo */
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666666; /* Valor fijo */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: vars.$font-secondary;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #4caf50; /* Valor fijo */
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #ff5722; /* Valor fijo */
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #e64a19; /* Valor fijo */
+}
+
+button {
+  font-family: 'Roboto', sans-serif; /* Valor fijo */
+  background-color: #4caf50; /* Valor fijo */
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #388e3c; /* Valor fijo */
+}
+
+/* About Section */
+.about {
+  text-align: center;
+}
+
+.about img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  color: #555555; /* Valor fijo */
+}
+
+/* Project Card */
+.project-card {
+  background: #ffffff; /* Valor fijo */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  color: #4caf50; /* Valor fijo */
+}
+
+/* Skills */
+.skill {
+  background: #4caf50; /* Valor fijo */
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cccccc; /* Valor fijo */
+  border-radius: 4px;
+}
